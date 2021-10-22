@@ -1,0 +1,23 @@
+[x] Setting up bot 
+[x] Creating deployer 
+
+#Recreate old commands
+
+[x] Avatar.js
+[x] Gm.js 
+[x] Gn.js 
+[x] invite.js
+[x] roll.js
+[x] d20.js
+[x] cf.js
+[ ] ban.js
+[ ] kick.js
+[ ] cat.js
+[ ] dog.js
+[ ] Socials.js
+
+# Adding more commands 
+
+[ ] mute.js
+[ ] user info.js
+
