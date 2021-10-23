@@ -22,38 +22,6 @@ client.once('ready', () => {
 	console.log(`AVG online in ${client.guilds.cache.size} servers \nStatus has been set to [ WATCHING ${status} ]`);
 });
 
-
-//Bot leave and join logs 
-client.on('guildCreate', (guild) => {
-
-	const log_channel = client.channels.cache.get('898314094782844989');
-
-	const join_embed = new MessageEmbed()
-	.setTitle(`AVG has been added to ${guild.name}`)
-	.setDescription(`AVG is now in ${client.guilds.cache.size} servers`)
-	.addField('Member count', `${guild.memberCount}`)
-	.setThumbnail(guild.iconURL())
-	.setColor('GREEN');
-
-	log_channel.send({embeds: [join_embed]});
-
-});
-client.on('guildDelete', (guild) => {
-	
-	const log_channel = client.channels.cache.get('898314094782844989');
-
-	const leave_embed = new MessageEmbed()
-	.setTitle(`AVG has left ${guild.name}`)
-	.setDescription(`AVG is now in ${client.guilds.cache.size} servers`)
-	.addField('Member count',  `${guild.memberCount}`)
-	.setThumbnail(guild.iconURL())
-	.setColor('RED');
-
-	log_channel.send({embeds: [leave_embed]});
-
-});
-
-
 // Creating interaction
 client.on('interactionCreate', async interaction => {
 
