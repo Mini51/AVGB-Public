@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed,} = require('discord.js');
-const { owner, avatar } = require('../config.json');
+const { Embed_pfp } = require('../config.json');
 
 module.exports = {
 
@@ -17,7 +17,7 @@ module.exports = {
 		.setTitle(`You rolled a ${roll}`)
 		.setAuthor(interaction.user.username, interaction.user.displayAvatarURL({ dynamic: true }))
 		.setTimestamp()
-		.setFooter(`Made by: ${owner}`, avatar);
+		.setFooter(`Made by: mini#5130`, Embed_pfp);
 
 		await interaction.reply({ embeds: [embed], ephemeral: true  })
 	},

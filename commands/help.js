@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed,} = require('discord.js');
-const { owner, avatar } = require('../config.json');
+const { Embed_pfp } = require('../config.json');
 
 module.exports = {
 
@@ -21,7 +21,7 @@ module.exports = {
 			{ name: '**Util**', value: '/avatar - Get the avatar URL of the selected user, or your own avatar.\n/socials - Sends all of our social media. \n /ping - Replies with Pong! \n /invite - sends a bot invite.'}
 		)
 		.setTimestamp()
-		.setFooter(`Made by: ${owner}`, avatar);
+		.setFooter(`Made by: mini#5130`, Embed_pfp);
 
 		await interaction.reply({ embeds: [embed], ephemeral: true  })
 	},

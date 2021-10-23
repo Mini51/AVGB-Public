@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed,} = require('discord.js');
 const fetch = require('node-fetch');
-const { owner, avatar } = require('../config.json');
+const { Embed_pfp } = require('../config.json');
 
 module.exports = {
 
@@ -20,6 +20,7 @@ module.exports = {
 		const embed = new MessageEmbed()
 		.setTitle(`Here is a cute cat ${interaction.user.username}`)
 		.setImage(file)
+		.setFooter(`Made by: mini#5130`, Embed_pfp);
 		
 
 		// Send messseage

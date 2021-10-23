@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed,} = require('discord.js');
-const { owner, avatar } = require('../config.json');
+const { Embed_pfp } = require('../config.json');
 
 
 module.exports = {
@@ -19,7 +19,7 @@ module.exports = {
         .addField('Please use this example form in your support ticket', '-Command used \n -Time command was used \n -Any other information', true)
 		.setAuthor(interaction.user.username, interaction.user.displayAvatarURL({ dynamic: true }))
 		.setTimestamp()
-		.setFooter(`Made by: ${owner}`, avatar);
+		.setFooter(`Made by: mini#5130`, Embed_pfp);
 
 		await interaction.reply({ embeds: [embed], ephemeral: true  })
 	},

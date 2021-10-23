@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed} = require("discord.js")
-const { owner, avatar } = require('../config.json');
+const { Embed_pfp } = require('../config.json');
 
 
 
@@ -20,6 +20,7 @@ module.exports = {
 		const embed = new MessageEmbed()
 		.setTitle(`${user.username}'s profile picture'`) 
 		.setImage(user.displayAvatarURL())
+		.setFooter(`Made by: mini#5130`, Embed_pfp);
 
 		
 		

@@ -1,6 +1,6 @@
-const { SlashCommandBuilder } = require('@discordjs/builders');
+const { SlashCommandBuilder, Embed } = require('@discordjs/builders');
 const { MessageEmbed,} = require('discord.js');
-const { owner, avatar } = require('../config.json');
+const { Embed_pfp} = require('../config.json');
 
 
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
 		.setTitle(`Good morning ${interaction.user.username}`)
         .setImage('https://c.tenor.com/YapwVN8sHbYAAAAC/good-morning-good.gif')
 		.setTimestamp()
-		.setFooter(`Made by: ${owner}`, avatar);
+		.setFooter(`Made by: mini#5130`, Embed_pfp);
 
 		await interaction.reply({ embeds: [embed], ephemeral: true  })
 	},
