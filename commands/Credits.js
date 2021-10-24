@@ -5,6 +5,7 @@ const { Embed_pfp} = require('../config.json');
 
 module.exports = {
 
+	
 	data: new SlashCommandBuilder()
 		.setName('gn')
 		.setDescription('Says goodnight.'),
