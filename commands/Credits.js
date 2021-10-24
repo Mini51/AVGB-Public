@@ -19,6 +19,6 @@ module.exports = {
 		.setTimestamp()
 		.setFooter(`Made by: mini#5130`, Embed_pfp);
 
-		await interaction.reply({ embeds: [embed], ephemeral: true  })
+		await interaction.reply({ embeds: [ embed ], ephemeral: true  })
 	},
 };
