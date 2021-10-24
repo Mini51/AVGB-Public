@@ -1,3 +1,8 @@
+/* original code
+https://github.com/discordjs/guide/blob/main/code-samples/creating-your-bot/creating-commands/deploy-commands.js
+*/  
+
+
 const fs = require('fs');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
