@@ -19,7 +19,7 @@ client.once('ready', () => {
 	const status = `over ${client.guilds.cache.size} servers | /help `
 
 	client.user.setActivity(status, { type: 'WATCHING' });
-	console.log(`AVG online in ${client.guilds.cache.size} servers \nStatus has been set to [ WATCHING ${status} ]`);
+	console.log(`\x1b[32m AVG online in ${client.guilds.cache.size} servers \nStatus has been set to [ WATCHING ${status} ] \x1b[0m `);
 });
 
 // Creating interaction
