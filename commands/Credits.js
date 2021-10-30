@@ -7,8 +7,8 @@ module.exports = {
 
 	
 	data: new SlashCommandBuilder()
-		.setName('gn')
-		.setDescription('Says goodnight.'),
+		.setName('credits')
+		.setDescription('Credits to the original bot creator.'),
 	async execute(interaction) {
 		const embed = new MessageEmbed()
 		.setColor('AQUA')
