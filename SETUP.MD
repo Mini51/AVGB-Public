@@ -17,11 +17,13 @@ npm install discord.js @discordjs/rest discord-api-types
 
 2. Paste your bots token into config.json were it says token.
 
-3. Open the folder in console and use the command listed below.
+3. Paste your client ID in to config.json were it says ClientID.
+
+4. Open the folder in console and use the command listed below.
 ```Batch
 node deploy-commands.js
 ```
-4. When it says "Successfully registered application commands."
+5. When it says "Successfully registered application commands."
 Use the command below. 
 ```Batch 
 Node index.js 
