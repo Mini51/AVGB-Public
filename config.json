@@ -1,6 +1,6 @@
 {  
-    "clientId": "851147210502438952",
-    "token": "",
+    "clientId": "Put your bot client ID here",
+    "token": "Put your bot token here",
     "prefix": "!",
     "Embed_pfp": "https://avatars.githubusercontent.com/u/80361877?s=400&u=ff77a603309f254087f93c84248deec5239546b7&v=4"
 }
