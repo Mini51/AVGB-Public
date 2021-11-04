@@ -10,7 +10,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
 3. Open the folder in your console and do. 
 ```Batch
-npm install discord.js @discordjs/rest discord-api-types 
+npm install discord.js @discordjs/rest discord-api-types node-fetch
 ```
 ## Starting the bot
 1. Make a discord bot application in  [Discord dev portal](https://discord.com/developers/applications). 
